@@ -1,0 +1,463 @@
+{
+  "svc-vendor": [
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/migrations/1498194996.do.init.sql",
+      "matched": [
+        "acid__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/scripts/schema.sql",
+      "matched": [
+        "acid__c",
+        "bank_account_number__c",
+        "bank_name__c",
+        "payment_type__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/src/context/eePayrun/createCampaignRowsFromCsv.js",
+      "matched": [
+        "bank_account_number__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/src/models/db-remittance/queries.js",
+      "matched": [
+        "bank_account_number__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/src/models/sequelize/salesforceAccount.js",
+      "matched": [
+        "acid__c",
+        "bank_account_number__c",
+        "bank_name__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/src/models/sequelize/salesforcePaymentTerm.js",
+      "matched": [
+        "acid__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/src/presenters/csv/international-payments/presenter.js",
+      "matched": [
+        "bank_account_number__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/src/presenters/pdf/remittance/template.ejs",
+      "matched": [
+        "bank_account_number__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/tests/controllers/helper/internationalPaymentsStub.js",
+      "matched": [
+        "bank_account_number__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/tests/controllers/internationalPaymentsController_test.js",
+      "matched": [
+        "bank_account_number__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/tests/controllers/test-data/db-test-init.sql",
+      "matched": [
+        "acid__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-vendor/tests/support/factories/index.js",
+      "matched": [
+        "acid__c"
+      ]
+    }
+  ],
+  "svc-reservation": [
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-reservation/src/api/chain/test/dummyData.ts",
+      "matched": [
+        "acid__c",
+        "bank_account_number__c",
+        "bank_name__c",
+        "payment_type__c"
+      ]
+    }
+  ],
+  "svc-order": [
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/baseline-schema.sql",
+      "matched": [
+        "category__c",
+        "brand__c",
+        "product__c",
+        "slug__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations/1607567381.do.bedband-item-trigger.sql",
+      "matched": [
+        "slug__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations/1616370909.do.us-state-synch-salesforce.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations/1662525112.do.update_salesforce_on_insurance_change.sql",
+      "matched": [
+        "product__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations/1662525113.do.add_brand_to_experience_item_sync.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations/1671528108.do.salesforce_purchases_sync.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations/1671613934.do.update_salesforce_on_items_change.sql",
+      "matched": [
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations_archived/1552012408.do.insurances-to-salesforce.sql",
+      "matched": [
+        "product__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations_archived/1560232738.do.add-brand-to-purchase__c.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations_archived/1573445954.do.add-changed_by-to-purchase__c.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/migrations_archived/1581931405.do.add-reservation_type-to-purchase__c.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/repo/schema.sql",
+      "matched": [
+        "category__c",
+        "brand__c",
+        "product__c",
+        "slug__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-order/test/triggers/sync-bedbank-items-to-salesforce.test.js",
+      "matched": [
+        "slug__c"
+      ]
+    }
+  ],
+  "svc-auth": [
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/scripts/customer-brands-migration",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/src/models/email/queries.js",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/test/helpers/db.js",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/schema.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/migrations/auth/1540252224.do.add-salesforce-preferences.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/migrations/auth/1582631748.do.create-le-preferences-archive.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/migrations/auth/1583141946.do.add-idx-preferences-brand__c.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/migrations/auth/1583141947.do.recreate-le-preferences-archive.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/migrations/auth/1583836936.do.sync-salesfore-memberships.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/migrations/auth/1583999751.do.sync_membership.sql",
+      "matched": [
+        "brand__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-auth/migrations/salesforce/1505195358.do.init.sql",
+      "matched": [
+        "brand__c"
+      ]
+    }
+  ],
+  "svc-offer": [
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/src/connect/tables.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "payment_terms__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/pull/schemas/svc_offer.sql",
+      "matched": [
+        "deal_category__c",
+        "deal_expiration_date__c",
+        "text__c",
+        "payment_terms__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190121020625-create-addons-combined-materialized-view.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190124015950-cloudinary-image-on-addons-materialized-view.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190201024231-more-fields-on-addons-materialized-view.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190201094336-vendor_addons_materialized_view.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190213061538-adding-travel-from-for-addons.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190221053114-addon_vendor_phone.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190225203816-addon_order.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190301034132-add-cost-price-currency-for-addons.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190311051207-fix-addon-cost-price-currency.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190502042036-display_value.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190502042041-adding-rezdy-specific-fields.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190514071225-add-show-in-to-addons.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190614121811-add_channel_fare_type.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190813005041-temporarily-remove-channel-provider-and-max-days.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190813031451-re-add-channel-provider-and-max-days.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190905051134-add-complimentary-flag.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190905051136-add-more-salesforce.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190925051136-add-soft-delete-inactive-flag-for-addons.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190927014955-move-soft-delete-flag-to-addon-materialized-view.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20190930002152-add_credit_amount.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20191105052533-add-fare-type-display-field.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20200616093638-update-vendor-addons.js",
+      "matched": [
+        "deal_category__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20221130120200-update_combined_addons.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/migrations/20230117225807-remove-package-sfid-constraint.js",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/schema.sql",
+      "matched": [
+        "deal_category__c",
+        "text__c",
+        "payment_terms__c",
+        "category__c"
+      ]
+    },
+    {
+      "filePath": "/Users/aarontoomey/Documents/repos/svc-offer/repo/seed/offer.sql",
+      "matched": [
+        "text__c"
+      ]
+    }
+  ]
+}
