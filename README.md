@@ -11,4 +11,10 @@ This is a simple script that will search a directory for files with then search 
 
 1. Clone the repo
 2. `cd` into the repo
-3. `node ./search_script.js <path to directory>`
+3. Add words to the `search_fields.txt` file (one word per line)
+4. `node ./search_script.js <path to directory>`
+
+## todo
+
+- [ ] add a way to specify the output file name
+- [ ] add a way to specify the search words file name
