@@ -105,6 +105,25 @@ function main() {
     let matches = [];
     let callbacks = 0;
 
+    async function saveCurrentState() {
+      // append to the json results file
+      const repo = rootDirectory.split("/").at(-1);
+      let results = await fs.readFile("./search_results.json", "utf8");
+      results = JSON.parse(results);
+      if (!results[repo]) {
+        results[repo] = matches;
+      } else {
+        results[repo].push(...matches);
+      }
+      await fs.writeFile("./search_results.json", JSON.stringify(results, null, 2)).catch((err) => {
+        console.error("Error while writing to results file", err);
+        console.timeEnd("main.process");
+        console.log(JSON.stringify(matches, null, 2));
+        process.exit(1);
+      });
+      console.log("Current results written to results.json for " + repo);
+    }
+
     function workerCallback(workerResult) {
       callbacks++;
       if (workerResult.finished) {
@@ -118,7 +137,17 @@ function main() {
         totalDirsSearched += workerResult.numDirsSearched ?? 0;
       }
       matches.push(...(workerResult.matchingFiles?.filter((a) => a !== null) ?? []));
-      displayStatus();
+      if (matches.length === 0) {
+        console.log("No matches found");
+      } else {
+        saveCurrentState()
+          .then(() => {
+            displayStatus();
+          })
+          .catch((err) => {
+            console.error("Error while saving current state", err);
+          });
+      }
     }
 
     function displayStatus() {
@@ -140,18 +169,7 @@ DIRs: ${totalDirsSearched}, Files: ${totalFilesSearched}, matches: ${matches.len
         if (matches.length === 0) {
           console.log("No matches found");
         } else {
-          // append to the json results file
-          const repo = rootDirectory.split("/").at(-1);
-          let results = await fs.readFile("./search_results.json", "utf8");
-          results = JSON.parse(results);
-          results[repo] = matches;
-          await fs.writeFile("./search_results.json", JSON.stringify(results, null, 2)).catch((err) => {
-            console.error("Error while writing to results file", err);
-            console.timeEnd("main.process");
-            console.log(JSON.stringify(matches, null, 2));
-            process.exit(1);
-          });
-          console.log("Results written to results.json for " + repo);
+          await saveCurrentState();
         }
         console.timeEnd("main.process");
         process.exit(0);
@@ -166,7 +184,18 @@ DIRs: ${totalDirsSearched}, Files: ${totalFilesSearched}, matches: ${matches.len
 
     process.on("SIGINT", () => {
       terminateAllWorkers();
-      process.exit(1);
+      console.log("SIGINT received, saving then terminating");
+      saveCurrentState()
+        .then(() => {
+          console.log("Current state saved");
+          console.timeEnd("main.process");
+          process.exit(1);
+        })
+        .catch((err) => {
+          console.error("Error while saving current state", err);
+          console.timeEnd("main.process");
+          process.exit(1);
+        });
     });
 
     (async () => {
